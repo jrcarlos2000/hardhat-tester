@@ -9,6 +9,7 @@ async function main(){
 
     const Contract = await ethers.getContractFactory('Vault');
     const contract = await Contract.deploy();
+    //const contract = await Contract.deploy([]) .... pass params into brackets
 
     console.log('contract deployed succesfully with address : ',contract.address);
 
